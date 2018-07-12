@@ -3,7 +3,9 @@
 /**
  * Module dependencies.
  */
-// require("babel-polyfill");
+require("babel-polyfill");
+require('babel-register');
+require("babel-core").transform("code", {plugins: ["transform-async-to-generator"]});
 // require('babel-core/register')({
 //   presets: ['es2015', 'stage-3']
 // });
