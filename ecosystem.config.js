@@ -17,7 +17,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:kaisela/koaDemo.git',
       path : '/home/node/koaDemo',
-      'post-deploy' : 'git pull origin master &&npm install && npm run prd'
+      'post-deploy' : 'git pull origin master &&npm install && pm2 start bin/www'
     }
   }
 };
