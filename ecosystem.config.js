@@ -17,7 +17,8 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:kaisela/koaDemo.git',
       path : '/home/node/koaDemo',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+      'post-deploy' : 'git pull origin master &&npm install && pm2 reload ecosystem.config.js --env pro' +
+  'duction'
     }
   }
 };
